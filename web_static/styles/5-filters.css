@@ -1,0 +1,38 @@
+.filters {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.locations,
+.amenities {
+    width: 25%;
+    border-right: 1px solid #DDDDDD;
+    padding: 20px;
+}
+
+.locations:first-child {
+    border-right: none;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.locations h4,
+.amenities h4 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+button {
+    height: 100%;
+    width: 25%;
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

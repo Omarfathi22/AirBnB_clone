@@ -1,0 +1,36 @@
+body {
+    color: #333; /* Adjust color for better contrast */
+    background-color: #fff; /* Adjust background color for better contrast */
+}
+
+/* Improve readability by increasing font size */
+body {
+    font-size: 16px; /* Increase font size for better readability */
+}
+
+/* Enhance focus styles for better navigation */
+*:focus {
+    outline: 2px solid #007bff; /* Add a visible focus indicator */
+}
+
+/* Hide decorative images from screen readers */
+.decorative {
+    display: none;
+}
+
+/* Improve keyboard navigation */
+a, button, [tabindex] {
+    cursor: pointer; /* Make interactive elements more visible */
+}
+
+/* Add ARIA attributes for screen readers */
+.screen-reader-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}

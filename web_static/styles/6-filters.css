@@ -1,0 +1,62 @@
+.filters {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+
+.locations,
+.amenities {
+    position: relative;
+    width: 25%;
+}
+
+.locations .popover,
+.amenities .popover {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.locations:hover .popover,
+.amenities:hover .popover {
+    display: block;
+}
+
+.locations h3,
+.amenities h3 {
+    font-weight: 600;
+}
+
+.locations h2 {
+    font-size: 16px;
+}
+
+.locations ul,
+.amenities ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.locations ul li,
+.amenities ul li {
+    cursor: pointer;
+}
+
+button {
+    height: 100%;
+    width: 25%;
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

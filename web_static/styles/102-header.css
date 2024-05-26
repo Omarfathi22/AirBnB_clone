@@ -1,0 +1,44 @@
+header {
+    background-color: #333; /* Dark background color for better contrast */
+    color: #fff; /* Light text color for better contrast */
+}
+
+/* Improve readability by increasing font size and adjusting font weight */
+header {
+    font-size: 18px; /* Increase font size for better readability */
+    font-weight: bold; /* Adjust font weight for better readability */
+}
+
+/* Enhance focus styles for better navigation */
+header a:focus {
+    outline: 2px solid #fff; /* Add a visible focus indicator */
+}
+
+/* Ensure links are distinguishable from regular text */
+header a {
+    color: #fff; /* Light text color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Change link color on hover */
+header a:hover {
+    color: #ccc; /* Lighter color on hover for better feedback */
+}
+
+/* Ensure logo is keyboard accessible */
+.header-logo:focus {
+    outline: none; /* Remove focus outline from logo */
+}
+
+/* Add ARIA attributes for screen readers */
+.header-logo {
+    position: relative; /* Ensure proper positioning */
+}
+
+.header-logo::after {
+    content: "AirBnB Logo"; /* Add descriptive text for screen readers */
+    position: absolute; /* Position text properly */
+    top: -9999px; /* Move text offscreen */
+    left: -9999px; /* Move text offscreen */
+}

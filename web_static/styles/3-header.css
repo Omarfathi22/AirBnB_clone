@@ -1,0 +1,19 @@
+header {
+    color: white;
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    background-color: #000; /* Assuming a black background for the header */
+}
+
+.logo {
+    margin-left: 20px;
+    width: 50px; /* Width of the logo image */
+    height: 50px; /* Height of the logo image */
+    background-image: url('../images/logo.png'); /* Path to the logo image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

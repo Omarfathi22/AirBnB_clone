@@ -1,0 +1,6 @@
+/* Example media query for header */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+}
+
+/* Add similar media queries for footer, filters, and places */
