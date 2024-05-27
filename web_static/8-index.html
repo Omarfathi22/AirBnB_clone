@@ -3,44 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page with Filters, Dropdowns, and Results</title>
+    <title>Header, Footer, Filter Box, and Search Result</title>
     <link rel="stylesheet" href="styles/4-common.css">
     <link rel="stylesheet" href="styles/3-header.css">
     <link rel="stylesheet" href="styles/3-footer.css">
     <link rel="stylesheet" href="styles/6-filters.css">
     <link rel="stylesheet" href="styles/8-places.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-<header>
-    <div class="logo"></div>
-</header>
-
-<div class="container">
-    <section class="filters">
-        <!-- Filters section content (same as before) -->
-    </section>
-    <section class="places">
-        <h1>Places</h1>
-        <article>
-            <h2>Place Name 1</h2>
-            <div class="price_by_night">$100</div>
-            <div class="information">
-                <div class="max_guest"><i class="fas fa-users"></i> Max Guests: 4</div>
-                <div class="number_rooms"><i class="fas fa-bed"></i> Bedrooms: 2</div>
-                <div class="number_bathrooms"><i class="fas fa-bath"></i> Bathrooms: 1</div>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <div class="container">
+        <section class="filters">
+            <div class="locations">
+                <h3>States</h3>
+                <ul class="popover">
+                    <li>
+                        <h2>State 1</h2>
+                        <ul>
+                            <li>City 1</li>
+                            <li>City 2</li>
+                            <li>City 3</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>State 2</h2>
+                        <ul>
+                            <li>City 4</li>
+                            <li>City 5</li>
+                            <li>City 6</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            <div class="user"><strong>Owner:</strong> John Doe</div>
-            <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis mauris vel justo fermentum euismod.</div>
-        </article>
-        <!-- Add more articles for additional places -->
-    </section>
-</div>
-
-<footer>
-    Best School
-</footer>
-
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <ul class="popover">
+                    <li>Fake Amenity 1</li>
+                    <li>Fake Amenity 2</li>
+                    <li>Fake Amenity 3</li>
+                </ul>
+            </div>
+            <button class="search-button">Search</button>
+        </section>
+        <section class="places">
+            <article>
+                <h2>Place Name 1</h2>
+                <div class="price_by_night">$100</div>
+                <div class="information">
+                    <div class="max_guest">
+                        <span>4</span>
+                        <img src="images/icon-guest.png" alt="Guests Icon">
+                    </div>
+                    <div class="number_rooms">
+                        <span>2</span>
+                        <img src="images/icon-bed.png" alt="Bedrooms Icon">
+                    </div>
+                    <div class="number_bathrooms">
+                        <span>2</span>
+                        <img src="images/icon-bath.png" alt="Bathrooms Icon">
+                    </div>
+                </div>
+                <div class="user"><strong>Owner:</strong> Fake Owner</div>
+                <div class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula dolor sit amet tellus euismod, ut posuere lectus mollis.
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        Best School
+    </footer>
 </body>
 </html>
